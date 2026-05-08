@@ -1,3 +1,5 @@
+#install pandas and pyarrow first!!
+
 import pandas as pd
 import pyarrow.parquet as pq
 from datetime import datetime
@@ -5,7 +7,7 @@ import os
 
 def main():
     # Konfigurasi File
-    input_file = 'yellow_tripdata_2026-03.parquet'  # Ganti jika nama file beda
+    input_file = 'yellow_tripdata_2026-03.parquet'  # Change your name file here
     output_file = 'hasil_analytic.csv'
 
     print(f"\n--- Mulai ETL pada {datetime.now().strftime('%H:%M:%S')} ---")
